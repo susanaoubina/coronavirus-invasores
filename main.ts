@@ -30,6 +30,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let Coronavirus: Sprite = null
 let laser: Sprite = null
 let MiNave: Sprite = null
+game.showLongText("Tienes 5 vidas y disparas con el botón A. Ganas si consigues 100 puntos", DialogLayout.Bottom)
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -192,7 +193,7 @@ game.onUpdateInterval(500, function () {
         . . 6 6 7 7 7 7 7 7 7 7 2 . . . 
         . . 6 2 7 7 6 7 7 7 7 7 2 . . . 
         . . . 2 7 7 7 7 7 7 7 2 6 6 . . 
-        . . . . 2 2 7 7 7 7 2 2 . . . . 
+        . . . . 2 2 7 7 7 7 2 2 . 6 . . 
         . . . . . 6 2 7 7 2 6 . . . . . 
         . . . . 6 . 6 2 2 2 . 6 . . . . 
         . . . . . . . 6 . . . . . . . . 
